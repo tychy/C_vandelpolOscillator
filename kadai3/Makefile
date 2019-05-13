@@ -1,2 +1,7 @@
-kadai3: kadai3.c 
-    gcc -o kadai3 kadai3.c
+kadai: kadai3
+plot: kadai3
+	chmod a+x kadai3
+	./kadai3 > output.dat
+	gnuplot < x.plt
+	gnuplot < y.plt
+	gnuplot < xandy.plt	

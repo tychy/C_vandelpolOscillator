@@ -1,10 +1,10 @@
 #include <stdio.h>
 #define dt 0.05
 #define maxstep 1000
-#define I 0.8
+#define I -0.4
 #define a 0.7
 #define b 0.8
-#define eps 3.0
+#define eps 2.2
 
 
 double fx(double x,double v){
