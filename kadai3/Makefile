@@ -5,3 +5,4 @@ plot: kadai3
 	gnuplot < x.plt
 	gnuplot < y.plt
 	gnuplot < xandy.plt	
+	gnuplot < xvector.plt

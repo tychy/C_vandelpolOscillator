@@ -1,10 +1,10 @@
 #include <stdio.h>
 #define dt 0.05
 #define maxstep 1000
-#define I -0.4
+#define I -0.33
 #define a 0.7
 #define b 0.8
-#define eps 2.2
+#define eps 3.0
 
 
 double fx(double x,double v){
@@ -17,11 +17,11 @@ double fv(double x,double v){
 int main(int argc, char *argv[]){
     int step;;
     double x,v,x1,v1,x2,v2,x3,v3,x4,v4;
-    x = 1.0;
-    v = -1.0;
+    x = -0.25;
+    v = 0.0;
     
     for (step=0;step<maxstep;step++){
-        printf("%lf %lf %lf \n",step*dt,x,v);
+        printf("%lf %lf %lf %lf %lf \n",step*dt,x,v,fx(x,v),fv(x,v));
         x1 = fx(x,v)*dt;
         v1 = fv(x,v)*dt;
         x2 = fx(x+x1/2,v+v1/2)*dt;
